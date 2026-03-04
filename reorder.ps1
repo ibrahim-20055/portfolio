@@ -1,4 +1,4 @@
-$path = "c:\Users\asus\.gemini\antigravity\scratch\portfolio\index.html"
+$path = "index.html"
 $html = [IO.File]::ReadAllText($path)
 
 function Extract-Section($id) {
@@ -56,3 +56,4 @@ $html = $html -replace '(?s)(<main>).*?(</main>)', ('$1' + "`n" + $new_main + "`
 
 [IO.File]::WriteAllText($path, $html)
 Write-Output "PowerShell Reorder Successful"
+
