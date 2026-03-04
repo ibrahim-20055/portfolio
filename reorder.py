@@ -1,13 +1,12 @@
 import os
 import re
 
-path = r'c:\Users\asus\.gemini\antigravity\scratch\portfolio\index.html'
+path = r'index.html'
 with open(path, 'r', encoding='utf-8') as f:
     html = f.read()
 
 def extract_section(id_name):
-    # Match the HTML comment preceding the section just for clean code
-    pattern = r'[ \t]*<!--[ \w-]*-->\s*<section id="' + id_name + r'".*?</section>'
+    pattern = r'<section id="' + re.escape(id_name) + r'".*?</section>'
     match = re.search(pattern, html, re.DOTALL)
     if not match:
         print(f"Missing section: {id_name}")
@@ -60,3 +59,4 @@ with open(path, 'w', encoding='utf-8') as f:
     f.write(new_html)
 
 print("Reorder successful.")
+
