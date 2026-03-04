@@ -20,7 +20,6 @@
 </head>
 
 <body class="dark-theme">
-<script src="charts.js"></script>
     <nav class="navbar">
         <div class="logo">PS.</div>
         <div class="nav-links">
@@ -906,9 +905,35 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="js/charts.js"></script>
+    <script src="charts.js"></script>
+    <script>
+const ctx = document.getElementById('novaFollowersChart').getContext('2d');
+const novaChart = new Chart(ctx, {
+    type: 'line', // نوع الرسم
+    data: {
+        labels: ['Day 1', 'Day 10', 'Day 20', 'Day 30', 'Day 40', 'Day 50'],
+        datasets: [{
+            label: 'Followers',
+            data: [0, 2000, 4000, 7000, 9000, 10000],
+            borderColor: 'rgb(75, 192, 192)',
+            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+            tension: 0.3
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: { display: true },
+        },
+        scales: {
+            y: { beginAtZero: true }
+        }
+    }
+});
+</script>
 </body>
 
 
 </html>
+
 
