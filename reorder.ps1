@@ -1,12 +1,13 @@
 $path = "index.html"
 $html = [IO.File]::ReadAllText($path)
 
-function Extract-Section($id) {
-    if ($html -match '(?s)[ \t]*<!--[ \w-]*-->\s*<section id="' + $id + '".*?</section>') {
-        return $matches[0]
-    }
-    return ""
-}
+def extract_section(id_name):
+    # Match the HTML comment preceding the section just for clean code
+    pattern = r'[ \t]*<!--[ \w-]*-->\s*<section id="' + id_name + r'".*?</section>'
+    match = re.search(pattern, html, re.DOTALL)
+    if not match:
+        print(f"Missing section: {id_name}")
+    return match.group(0) if match else ""
 
 $hero = Extract-Section "hero"
 $about = Extract-Section "about"
@@ -56,4 +57,5 @@ $html = $html -replace '(?s)(<main>).*?(</main>)', ('$1' + "`n" + $new_main + "`
 
 [IO.File]::WriteAllText($path, $html)
 Write-Output "PowerShell Reorder Successful"
+
 
