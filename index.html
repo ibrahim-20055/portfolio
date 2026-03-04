@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Ibrahim Ali | Social Media Manager & Social Media Marketing</title>
+    <meta name="description" content="Turning Content into Measurable Growth, Trust, and Revenue.">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="dark-theme">
+
+    <nav class="navbar">
+        <div class="logo">PS.</div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#expertise">Expertise</a>
+            <a href="#case-studies">Case Studies</a>
+            <a href="#impact">Impact</a>
+            <a href="#cv">CV</a>
+        </div>
+        <a href="#contact" class="btn btn-primary small">Contact</a>
+    </nav>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="hero" class="hero section-padding">
+            <div class="hero-content">
+                <div class="badge">Performance-Driven Marketing</div>
+                <h1 class="headline">Performance-Driven<br><span class="highlight">Social Media Manager</span><br>&
+                    Content Strategist</h1>
+                <p class="subheadline">Turning Content into Measurable Growth, Trust, and Revenue.</p>
+                <div class="cta-group">
+                    <a href="#case-studies" class="btn btn-primary">View Case Studies</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="abstract-shape"></div>
+                <canvas id="heroChart" width="400" height="300"></canvas>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="about section-padding">
+            <div class="section-header">
+                <h2>The Strategy</h2>
+                <p>Not just content. Conversion architecture.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="icon-box">&#8599;</div>
+                    <h3>Organic Growth Expertise</h3>
+                    <p>Scaling audiences rapidly without reliance on paid acquisition.</p>
+                </div>
+                <div class="about-card">
+                    <div class="icon-box">&#8711;</div>
+                    <h3>Funnel-Based Marketing</h3>
+                    <p>Building targeted journeys from awareness to conversion.</p>
+                </div>
+                <div class="about-card">
+                    <div class="icon-box">&#36;</div>
+                    <h3>Conversion-Driven</h3>
+                    <p>Content engineered specifically to drive measurable revenue.</p>
+                </div>
+                <div class="about-card">
+                    <div class="icon-box">&#9787;</div>
+                    <h3>Psychological Positioning</h3>
+                    <p>Leveraging behavioral triggers, FOMO, and curiosity loops.</p>
+                </div>
+                <div class="about-card">
+                    <div class="icon-box">&#128200;</div>
+                    <h3>KPI Tracking & Optimization</h3>
+                    <p>Data-informed decision making and continuous performance tuning.</p>
+                </div>
+                <div class="about-card">
+                    <div class="icon-box">&#9881;</div>
+                    <h3>End-to-End Ownership</h3>
+                    <p>Full-stack campaign management from strategy to closing.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CORE EXPERTISE SECTION -->
+        <section id="expertise" class="expertise section-padding bg-alt">
+            <div class="section-header">
+                <h2>Core Capabilities</h2>
+                <p>Full-stack marketing skill set.</p>
+            </div>
+            <div class="expertise-list">
+                <div class="expertise-item">Content Strategy</div>
+                <div class="expertise-item">Performance Marketing</div>
+                <div class="expertise-item">Funnel Design</div>
+                <div class="expertise-item">Persona Development</div>
+                <div class="expertise-item">Copywriting & Messaging</div>
+                <div class="expertise-item">Psychological Hooks</div>
+                <div class="expertise-item">FOMO Frameworks</div>
+                <div class="expertise-item">Influencer Scripts</div>
+                <div class="expertise-item">Analytics & Optimization</div>
+            </div>
+        </section>
+
+        <!-- BRAND PERSONA SECTION -->
+        <section id="brand-persona" class="section-padding">
+            <div class="section-header">
+                <h2>Brand Persona (Aon)</h2>
+                <p>I intentionally created a structured Brand Persona to define there positioning in the tech education
+                    market.</p>
+            </div>
+            <div class="persona-container" style="direction: rtl; text-align: right;">
+                <div class="persona-grid">
+                    <!-- Block 1 - Overview -->
+                    <div class="persona-block highlight-border">
+                        <div class="pb-icon">💡</div>
+                        <h3>نظرة عامة</h3>
+                        <p>شخص سينير بالمجال التقني من يحجي يحجي بثقة وفرفوش ولوتي مال مجال, يحب يساعد المبتدئين<br>عمره
+                            يتراوح بين 31 سنة يحبون يتشاقون ويا المتابعين ويكون صديق الكل ويقدم نصيحة للعجوزي والشاطر
+                            يمدح بي.</p>
+                    </div>
+
+                    <!-- Block 2 - Basic Identity -->
+                    <div class="persona-block">
+                        <div class="pb-icon">👤</div>
+                        <h3>Brand Persona</h3>
+                        <ul class="persona-list">
+                            <li><strong>الاسم:</strong> السينير الفرفوش</li>
+                            <li><strong>العمر:</strong> حوالي 30–31 سنة<br>مو صغير مبتدئ<br>ومو جبير رسمي.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Block 3 - Background -->
+                    <div class="persona-block">
+                        <div class="pb-icon">🎓</div>
+                        <h3>الخلفية</h3>
+                        <ul class="persona-list">
+                            <li>خبرة بالمجال التقني</li>
+                            <li>فاهم السوق مو بس أكاديمي</li>
+                            <li>يعرف أخطاء المبتدئين وهو هم مر بيها</li>
+                        </ul>
+                    </div>
+
+                    <!-- Block 4 - Communication Style -->
+                    <div class="persona-block">
+                        <div class="pb-icon">💬</div>
+                        <h3>أسلوب الكلام</h3>
+                        <ul class="persona-list">
+                            <li>يحچي بثقة بدون تكبر</li>
+                            <li>فرفوش</li>
+                            <li>يستخدم مصطلحات (API, Bug, Deploy...) بس بطريقة مفهومة</li>
+                            <li>يحب يتشاقى ويستفز المتابعين بطريقة لطيفة</li>
+                            <li>يسوي تحديات</li>
+                            <li>يمدح الشاطر علنيًا</li>
+                        </ul>
+                    </div>
+
+                    <!-- Block 5 - Personality with Beginners -->
+                    <div class="persona-block">
+                        <div class="pb-icon">🌱</div>
+                        <h3>شخصيته مع المبتدئين</h3>
+                        <ul class="persona-list">
+                            <li>داعم</li>
+                            <li>ما يضحك عليهم</li>
+                            <li>يصححلهم بس بدون إحراج</li>
+                            <li>يحب يشوف تطورهم</li>
+                        </ul>
+                    </div>
+
+                    <!-- Block 6 - Personality with Advanced -->
+                    <div class="persona-block">
+                        <div class="pb-icon">⭐</div>
+                        <h3>شخصيته وية الشطار</h3>
+                        <ul class="persona-list">
+                            <li>يمدحهم كدام الكل</li>
+                            <li>يفتخر بيهم</li>
+                            <li>يخليهم قدوة</li>
+                            <li>ينطيهم مسؤولية</li>
+                        </ul>
+                    </div>
+
+                    <!-- Block 7 - Core Values -->
+                    <div class="persona-block">
+                        <div class="pb-icon">💎</div>
+                        <h3>القيمه</h3>
+                        <ul class="persona-list">
+                            <li>ما يحب العشوائية</li>
+                            <li>يكره الأعذار</li>
+                            <li>يحارب ثقافة أريد أتعلم بسرعة</li>
+                            <li>يؤمن بالمسار + التطبيق</li>
+                        </ul>
+                    </div>
+
+                    <!-- Block 8 - How It’s Used -->
+                    <div class="persona-block">
+                        <div class="pb-icon">🎯</div>
+                        <h3>شلون يستخدمها</h3>
+                        <ul class="persona-list">
+                            <li>يسوي تحديات أسبوعية</li>
+                            <li>ينزل ستوريات استفزازية مثل:<br>إذا بعدك تخاف من for loop… عدلها قبل ما تفكر تصير Full
+                                Stack</li>
+                            <li>يشجع التسجيل بدون بيع مباشر</li>
+                        </ul>
+                    </div>
+
+                    <!-- Block 9 - What It Doesn’t Do -->
+                    <div class="persona-block highlight-warn">
+                        <div class="pb-icon">🚫</div>
+                        <h3>أشياء ما يسويها</h3>
+                        <ul class="persona-list">
+                            <li>ما يستخدم لغة رسمية ثكيلة</li>
+                            <li>ما يبالغ بوعود</li>
+                            <li>ما يقلل من قيمة أحد</li>
+                        </ul>
+                    </div>
+
+                    <!-- Block 10 - Tone of Voice -->
+                    <div class="persona-block">
+                        <div class="pb-icon">🎙️</div>
+                        <h3>Tone of Voice</h3>
+                        <ul class="persona-list">
+                            <li>نحچي عراقي عامي</li>
+                            <li>نكسر الرسميات الزايدة</li>
+                            <li>نستخدم أمثلة واقعية</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AUDIENCE PERSONA SECTION -->
+        <section id="audience-persona" class="section-padding bg-alt">
+            <div class="section-header">
+                <h2>Audience Persona – Fatima (Support Persona)</h2>
+                <p>This audience persona represents long-term university pipeline growth.</p>
+            </div>
+
+            <div class="audience-card">
+                <!-- Left Side: Profile -->
+                <div class="ap-profile">
+                    <div class="ap-header">
+                        <div class="ap-avatar">👩</div>
+                        <div>
+                            <h3>fatima</h3>
+                            <span class="ap-badge">Support Persona</span>
+                            <div class="ap-subtext">technical University Student</div>
+                        </div>
+                    </div>
+
+                    <div class="ap-section">
+                        <h4>Profile</h4>
+                        <ul class="ap-list">
+                            <li><span class="icon">⚧️</span> <strong>Gender:</strong> female</li>
+                            <li><span class="icon">🎂</span> <strong>Age:</strong> 20</li>
+                            <li><span class="icon">📍</span> <strong>Address:</strong> baghdad, karada</li>
+                        </ul>
+                    </div>
+
+                    <div class="ap-section">
+                        <h4>Platform</h4>
+                        <p><span class="icon">📱</span> Mostly Instagram, TikTok, sometimes Facebook, rarely LinkedIn
+                        </p>
+                    </div>
+
+                    <div class="ap-section">
+                        <h4>Role in Marketing</h4>
+                        <ul class="ap-list">
+                            <li><span class="icon">🔮</span> <strong>Future customer:</strong> Not the primary
+                                conversion target for this course</li>
+                        </ul>
+                    </div>
+
+                    <div class="ap-section">
+                        <h4>Availability</h4>
+                        <ul class="ap-list">
+                            <li><span class="icon">☀️</span> <strong>During breaks:</strong> All day</li>
+                            <li><span class="icon">🌙</span> <strong>During semester:</strong> 6:00 PM – 11:00 PM</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right Side: Goals & Problems -->
+                <div class="ap-details">
+                    <div class="ap-block goal-block">
+                        <h4 class="ap-title"><span class="icon">🎯</span> goal</h4>
+                        <ul class="data-list custom-list">
+                            <li>Learn beyond university curriculum</li>
+                            <li>Keep up with market trends</li>
+                            <li>Choose a future-proof specialization</li>
+                            <li>Become job-ready before graduation</li>
+                        </ul>
+                    </div>
+
+                    <div class="ap-block problem-block">
+                        <h4 class="ap-title"><span class="icon">⚠️</span> problem</h4>
+                        <ul class="data-list custom-list warn-list">
+                            <li>Outdated university curriculum</li>
+                            <li>Fear of graduating without real skills</li>
+                            <li>Doesn’t want to rely only on academic education</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- MY COPYWRITING APPROACH SECTION -->
+        <section id="copywriting-approach" class="section-padding bg-alt">
+            <div class="section-header">
+                <h2>My Copywriting Approach</h2>
+                <p>My communication style is identity-driven and psychologically structured.</p>
+            </div>
+            <div class="cv-container"
+                style="white-space: pre-wrap; direction: rtl; text-align: right; line-height: 1.8;">
+                1
+                ليش..
+                ميصير
+                تبرمج برمضان؟
+                2
+                لان المبرمج متعود يشرب 13 لتر كهوة باليوم يلة يكمل كوده
+                3
+                لان 13 واحد باليوم يكلة الذكاء الاصطناعي راح ياخذ شغلك
+                4
+                لان المبرمج يجو 13 واحد باليوم حتى يهكرلهم حسابات
+                5
+                لان يوم 13 راح ينطلق كورس الـ FUllstack + AI
+                وانت بعدك تفكر بس تتعلم
+
+            </div>
+        </section>
+
+        <!-- CASE STUDIES OVERVIEW -->
+        <section id="case-studies" class="case-studies section-padding">
+
+            <!-- CASE STUDY 1: NOVA ARABIA -->
+            <div class="case-study-container">
+                <div class="cs-header">
+                    <span class="cs-badge">Case Study 01</span>
+                    <h2>Nova Arabia</h2>
+                    <p class="cs-subtitle">From 0 to 10,000 Followers in 50 Days (100% Organic Growth)</p>
+                </div>
+
+                <div class="dashboard-grid">
+                    <!-- Left Column: Context & Text -->
+                    <div class="cs-details">
+                        <div class="cs-block">
+                            <h3>Overview & Objective</h3>
+                            <p><strong>Brand:</strong> Digital space news magazine for the Arabic-speaking audience.</p>
+                            <p><strong>Goal:</strong> Reach 1,000 followers in 30 days, test virality, build niche
+                                audience.</p>
+                        </div>
+                        <div class="cs-block">
+                            <h3>Strategy</h3>
+                            <ul class="data-list">
+                                <li>Reels-first approach (1-2 daily, ~20/week)</li>
+                                <li>Psychological curiosity hooks & conspiracy framing</li>
+                                <li>Shock-based educational facts</li>
+                            </ul>
+                        </div>
+                        <div class="cs-block">
+                            <h3>Viral Post Metrics</h3>
+                            <div class="metric-row">
+                                <div class="metric"><span class="value">1.3M</span>Views</div>
+                                <div class="metric"><span class="value">438</span>Comments</div>
+                                <div class="metric"><span class="value">800</span>Saves</div>
+                                <div class="metric"><span class="value">212</span>Followers</div>
+                            </div>
+                        </div>
+                        <div class="cs-block">
+                            <h3>Execution Ownership</h3>
+                            <p>Content strategy, research, hook writing, scriptwriting, publishing, optimization,
+                                performance analysis.</p>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Charts & Data -->
+                    <div class="cs-dashboard">
+                        <div class="chart-card">
+                            <h4>Follower Growth (50 Days)</h4>
+                            <canvas id="novaFollowersChart"></canvas>
+                        </div>
+                        <div class="chart-card highlight-card">
+                            <h4>Final Results</h4>
+                            <ul class="kpi-list">
+                                <li><span class="label">Total Followers:</span> <span class="val success">10,000</span>
+                                </li>
+                                <li><span class="label">Timeframe:</span> <span class="val">50 Days</span></li>
+                                <li><span class="label">Monthly Views:</span> <span class="val">500,000</span></li>
+                                <li><span class="label">View-to-Follow:</span> <span class="val">2.8%</span></li>
+                                <li><span class="label">Organic Shift:</span> <span class="val">100%</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="cs-footer">
+                    <strong>Growth Insight:</strong> Curiosity-based hooks triggered psychological tension, rapidly
+                    expanding algorithm distribution, comment rates, and watch time. Hit 1,000 followers by Day 8 (22
+                    days ahead of schedule).
+                </div>
+            </div>
+
+            <hr class="cs-divider">
+
+            <!-- CASE STUDY 2: AON -->
+            <div class="case-study-container">
+                <div class="cs-header">
+                    <span class="cs-badge">Case Study 02</span>
+                    <h2>Aon – Full Stack Course</h2>
+                    <p class="cs-subtitle">Rebuilding a Dormant Brand & Generating 9,800,000 IQD Revenue</p>
+                </div>
+
+                <div class="dashboard-grid reverse">
+                    <!-- Left Column: Charts & Visuals -->
+                    <div class="cs-dashboard">
+                        <div class="chart-card revenue-card">
+                            <h4>Total Revenue Generated</h4>
+                            <div class="huge-metric">9,800,000 <span class="currency">IQD</span></div>
+                            <div class="sub-metric">From 28 Paid Students (Course Price: 350K IQD)</div>
+                        </div>
+                        <div class="chart-card">
+                            <h4>Conversion Funnel</h4>
+                            <canvas id="aonFunnelChart"></canvas>
+                        </div>
+                        <div class="chart-card">
+                            <h4>8-Month Impact Dashboard</h4>
+                            <canvas id="aonImpactChart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Context & Text -->
+                    <div class="cs-details">
+                        <div class="cs-block">
+                            <h3>Initial Status & Problems</h3>
+                            <p>Inactive for 1 year, 80% dependent on paid ads (4.3k followers). Audience suffered from
+                                low trust, tech-fear, and confusion.</p>
+                        </div>
+                        <div class="cs-block">
+                            <h3>Phased Strategy</h3>
+                            <p><strong>Phase 1 - Awareness (30 Days):</strong> Educational content, youthful messaging,
+                                trust-testing.</p>
+                            <p><strong>Phase 2 - Psychological Rebuild:</strong> FOMO, curiosity loops, scarcity
+                                triggers, social proof.</p>
+                        </div>
+                        <div class="cs-block">
+                            <h3>Campaign Data (Batch 1)</h3>
+                            <div class="metric-row col-3">
+                                <div class="metric"><span class="value">328K</span>Views</div>
+                                <div class="metric"><span class="value">124</span>Clicks</div>
+                                <div class="metric"><span class="value">78</span>Reg.</div>
+                            </div>
+                        </div>
+                        <div class="cs-block">
+                            <h3>8-Month Absolute Impact</h3>
+                            <ul class="data-list">
+                                <li>1.3M Total Views | +848% Reach Growth</li>
+                                <li>26.4K Engagements | 1,000 Link Clicks</li>
+                                <li>3,800 New Followers | +90% Engagement rate (M3)</li>
+                                <li><strong>98% Registrations Organic</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="cs-footer">
+                    <strong>My Role:</strong> Market research, persona dev, funnel design, content strategy,
+                    scriptwriting, FOMO framework, influencer writing, optimization.
+                </div>
+            </div>
+
+            <hr class="cs-divider">
+
+            <!-- CASE STUDY 3: FULL STACK BATCH 2 -->
+            <div class="case-study-container">
+                <div class="cs-header">
+                    <span class="cs-badge">Case Study 03</span>
+                    <h2>Full Stack – Batch 2 Launch</h2>
+                    <p class="cs-subtitle">Scaling Conversions with Social Proof & Urgency</p>
+                </div>
+
+                <div class="dashboard-grid">
+                    <!-- Left Column -->
+                    <div class="cs-details">
+                        <div class="cs-block">
+                            <h3>Context & Challenges</h3>
+                            <p>After Batch 1 success, trust increased, but timing was poor (exam season, previous
+                                competing course, no strict launch date).</p>
+                        </div>
+                        <div class="cs-block">
+                            <h3>Social Proof Driven Strategy</h3>
+                            <ul class="data-list">
+                                <li>Heavy testimonial and before/after utilization.</li>
+                                <li>Student storytelling and challenges.</li>
+                                <li>Classroom environment & trend-based content.</li>
+                            </ul>
+                        </div>
+                        <div class="cs-block">
+                            <h3>Influencer Strategy</h3>
+                            <p><strong>Day 1:</strong> Telegram announcement + storytelling script.</p>
+                            <p><strong>Day 2:</strong> Deadline push.</p>
+                            <p><strong>Result:</strong> 17 registrations in just 2 days from influencers alone.</p>
+                        </div>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="cs-dashboard">
+                        <div class="chart-card">
+                            <h4>Registration Sources (42 Total)</h4>
+                            <canvas id="batch2SourceChart"></canvas>
+                        </div>
+                        <div class="chart-card highlight-card">
+                            <h4>Performance Metrics</h4>
+                            <ul class="kpi-list">
+                                <li><span class="label">Target:</span> <span class="val">20 Students</span></li>
+                                <li><span class="label">Final Reg:</span> <span class="val success">42 Students (210% to
+                                        goal)</span></li>
+                                <li><span class="label">Total Views:</span> <span class="val">201,300</span></li>
+                                <li><span class="label">Link Clicks:</span> <span class="val">349</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="cs-footer">
+                    <strong>Strategic Learning:</strong> "Batch 1 = Promise. Batch 2 = Evidence." Conversion heavily
+                    depends on timing, scarcity clarity, and emotional trigger intensity.
+                </div>
+            </div>
+
+            <hr class="cs-divider">
+
+            <!-- CASE STUDY 4: AI COURSE LAUNCH -->
+            <div class="case-study-container">
+                <div class="cs-header">
+                    <span class="cs-badge">Case Study 04</span>
+                    <h2>AI Course Launch – Rebuilding Trust Through Sessions-Driven Conversion</h2>
+                </div>
+
+                <div class="dashboard-grid reverse">
+                    <!-- Left Column: Visuals & Data -->
+                    <div class="cs-dashboard">
+                        <div class="chart-card revenue-card">
+                            <h4>Revenue Generated</h4>
+                            <div class="huge-metric">4,950,000 <span class="currency">IQD</span></div>
+                        </div>
+
+                        <div class="chart-card highlight-card">
+                            <h4>Performance Metrics</h4>
+                            <ul class="kpi-list">
+                                <li><span class="label">Total Views:</span> <span class="val">208,000</span></li>
+                                <li><span class="label">Registrations:</span> <span class="val">25</span></li>
+                                <li><span class="label">Paid Students:</span> <span class="val success">11</span></li>
+                                <li><span class="label">Course Price:</span> <span class="val">450,000 IQD</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="chart-card">
+                            <h4>Session-Based Funnel</h4>
+                            <div class="funnel-diagram">
+                                <div class="funnel-stage">Content</div>
+                                <div class="funnel-arrow">&rarr;</div>
+                                <div class="funnel-stage">Session</div>
+                                <div class="funnel-arrow">&rarr;</div>
+                                <div class="funnel-stage">Trust</div>
+                                <div class="funnel-arrow">&rarr;</div>
+                                <div class="funnel-stage">Offer</div>
+                                <div class="funnel-arrow final">&rarr;</div>
+                                <div class="funnel-stage final">Conversion</div>
+                            </div>
+                        </div>
+
+                        <div class="chart-card">
+                            <h4>Session Impact on Conversion</h4>
+                            <div style="height: 120px;">
+                                <canvas id="aiSessionChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Text & Context -->
+                    <div class="cs-details" style="white-space: pre-wrap; line-height: 1.7;">
+                        <div class="cs-block">
+                            <h3>Context</h3>
+                            After multiple technical course launches, audience trust began declining due to:
+
+                            • Repeated course promotions
+                            • New instructors without proven student results
+                            • No strong project-based proof
+
+                            The challenge wasn’t awareness.
+                            It was credibility.
+                        </div>
+                        <div class="cs-block">
+                            <h3>Core Challenge</h3>
+                            • Instructor was not widely known
+                            • No public student project portfolio
+                            • Audience hesitation toward AI as a new field
+                            • Management requested minimal reliance on paid sponsorship
+
+                            This required a structural shift in strategy.
+                        </div>
+                        <div class="cs-block">
+                            <h3>Objective</h3>
+                            • Minimum target: 30 registrations
+                            • First month target: 15 registrations
+                            • Increase trust in new instructor
+                            • Maintain organic-driven growth
+                            • Strengthen long-term brand authority
+                        </div>
+                        <div class="cs-block">
+                            <h3>Strategy Shift</h3>
+                            Instead of pushing direct sales, I built a Session-Based Conversion Funnel.
+
+                            Campaign Period:
+                            40 days
+
+                            Funnel Structure:
+                            Content → Session → Trust → Offer → Conversion
+                        </div>
+                        <div class="cs-block">
+                            <h3>Key Strategic Element: Sessions</h3>
+                            I designed and promoted educational sessions addressing:
+
+                            • AI misconceptions
+                            • Fear of complexity
+                            • Career confusion
+                            • Market demand reality
+
+                            Session 1:
+                            12 in-person attendees
+                            20+ online attendees
+                            4 direct conversions
+
+                            Session 2:
+                            More specialized focus
+                            Strong instructor positioning
+                            Live project demonstrations
+                            7 direct conversions
+
+                            Sessions became the primary trust engine.
+                        </div>
+                        <div class="cs-block">
+                            <h3>AI Course Strategy – FOMO Funnel (Short)</h3>
+                            The AI course marketing strategy was structured around a funnel-based FOMO framework:
+
+                            • Awareness – education + myth breaking
+                            • Engagement – live sessions + social proof
+                            • Consideration – before/after identity positioning
+                            • Conversion – limited seats, deadlines, urgency, acceptance waves
+                            • Authority Reinforcement – launch coverage and readiness messaging
+
+                            Seat limitation was quality-based, not artificial scarcity.
+                        </div>
+                        <div class="cs-block">
+                            <h3>Campaign Content Flow</h3>
+                            • Curiosity-based Stories
+                            • “Skill you must learn in 2026” positioning
+                            • Educational reels
+                            • Instructor explaining practical AI use cases
+                            • Social proof reinforcement
+                            • Deadline urgency
+
+                            Framework used:
+                            Awareness → Value → Social Proof → Reach → Conversion
+                        </div>
+                        <div class="cs-block">
+                            <h3>Performance Metrics</h3>
+                            208,000 total views
+                            25 total registrations
+                            11 paid students
+                            Course price: 450,000 IQD
+                            Revenue Generated: 4,950,000 IQD
+
+                            98% of registrations came from content + sessions.
+                            Minimal external sponsorship.
+                        </div>
+                        <div class="cs-block">
+                            <h3>Conversion Insight</h3>
+                            The campaign proved:
+
+                            When direct trust is weak,
+                            Live interaction increases conversion probability significantly.
+
+                            Sessions converted at a much higher rate than passive content.
+                        </div>
+                        <div class="cs-block">
+                            <h3>Strategic Learning</h3>
+                            Not all campaigns require more visibility.
+                            Some require deeper engagement.
+
+                            Switching from pure content marketing to session-driven authority positioning restored trust
+                            and drove qualified registrations.
+                        </div>
+                    </div>
+                </div>
+                <div class="cs-footer">
+                    <strong>My Role:</strong>
+                    Funnel redesign
+                    Persona-based content planning
+                    Session concept creation
+                    Scriptwriting
+                    Positioning instructor
+                    Performance tracking
+                    Trust reconstruction strategy
+                    Full launch ownership.
+                </div>
+            </div>
+
+        </section>
+
+        <!-- BUSINESS IMPACT SUMMARY -->
+        <section id="impact" class="impact section-padding bg-alt">
+            <div class="section-header center">
+                <h2>Total Business Impact</h2>
+                <p>Cumulated cross-campaign performance.</p>
+            </div>
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <div class="impact-title">Views Generated</div>
+                    <div class="impact-value">3,087,300+</div>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-title">Total Rev (IQD)</div>
+                    <div class="impact-value glow">14,750,000</div>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-title">Registrations</div>
+                    <div class="impact-value">120+</div>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-title">Followers Gained</div>
+                    <div class="impact-value">13,800+</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROFESSIONAL CV SECTION -->
+        <section id="cv" class="cv section-padding">
+            <div class="section-header center">
+                <h2> CV</h2>
+
+            </div>
+
+            <div class="cv-container">
+                <!-- Personal Info & Summary -->
+                <div class="cv-header-block">
+                    <div class="cv-profile-header">
+                        <div class="cv-profile-img-container">
+                            <img src="photo_2025-06-10_01-27-14.jpg" alt="Ibrahim Ali" class="cv-profile-img">
+                        </div>
+                        <div class="cv-personal-info">
+                            <h3 class="cv-name">Ibrahim Ali</h3>
+                            <div class="cv-contact-grid">
+                                <span><strong>Email:</strong> ibrahim.ali23031@gmail.com</span>
+                                <span><strong>Phone:</strong> (+964) 07765189405</span>
+                                <span><strong>Location:</strong> Baghdad, Albiya, 10011, Iraq</span>
+                                <span><strong>Birth:</strong> Baghdad, Iraq</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cv-summary">
+                        <h4> Summary</h4>
+                        <p>Creative Social Media Manager with over 2 years of experience helping brands achieve their
+                            goals. Skilled in developing and managing engaging content strategies across multiple social
+                            media platforms, combining creativity with data-driven marketing to drive growth and
+                            increase brand awareness.</p>
+                    </div>
+                </div>
+
+                <hr class="cv-divider">
+
+                <!-- Experience & Education Grid -->
+                <div class="cv-grid">
+                    <!-- Left Column: Work Experience -->
+                    <div class="cv-experience">
+                        <h4 class="cv-section-title">Work Experience</h4>
+
+                        <div class="cv-item">
+                            <div class="cv-item-header">
+                                <h5>Social Media Manager</h5>
+                                <span class="cv-company">AON.IQ</span>
+                                <span class="cv-date">07/08/2025 &ndash; 01/03/2026</span>
+                            </div>
+                            <ul class="cv-list">
+                                <li>Managed content strategies across platforms</li>
+                                <li>Increased sales organically</li>
+                                <li>Built brand personas</li>
+                                <li>Led marketing campaigns</li>
+                            </ul>
+                        </div>
+
+                        <div class="cv-item">
+                            <div class="cv-item-header">
+                                <h5>Social Media Manager Instructor</h5>
+                                <span class="cv-company">AON.IQ</span>
+                                <span class="cv-date">07/08/2025 &ndash; 07/11/2025</span>
+                            </div>
+                            <ul class="cv-list">
+                                <li>Trained interns in content creation and social media management</li>
+                                <li>Guided strategy planning and execution</li>
+                                <li>Supervised implementation</li>
+                            </ul>
+                        </div>
+
+                        <div class="cv-item">
+                            <div class="cv-item-header">
+                                <h5>Content Creator & Marketing Intern</h5>
+                                <span class="cv-company">HUB200</span>
+                                <span class="cv-date">15/03/2025 &ndash; 21/11/2025</span>
+                            </div>
+                            <ul class="cv-list">
+                                <li>Covered events and conferences</li>
+                                <li>Produced digital content and promotional materials</li>
+                                <li>Managed digital ads</li>
+                                <li>Collaborated with marketing teams</li>
+                            </ul>
+                        </div>
+
+                        <div class="cv-item">
+                            <div class="cv-item-header">
+                                <h5>Social Media Specialist &ndash; Freelance</h5>
+                                <span class="cv-company">Independent</span>
+                                <span class="cv-date">05/08/2024 &ndash; 29/09/2025</span>
+                            </div>
+                            <ul class="cv-list">
+                                <li>Published breaking news and magazine content</li>
+                                <li>Grew audience to 10,000 followers in 50 days</li>
+                                <li>Achieved 500,000 monthly views</li>
+                            </ul>
+                        </div>
+
+                        <div class="cv-item">
+                            <div class="cv-item-header">
+                                <h5>Content Creator &ndash; Freelance</h5>
+                                <span class="cv-company">Independent</span>
+                                <span class="cv-date">29/12/2023 &ndash; Current</span>
+                            </div>
+                            <ul class="cv-list">
+                                <li>Created cultural and short-form marketing content</li>
+                                <li>Covered conferences and live events</li>
+                                <li>Focused on engagement and storytelling</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Education & Skills -->
+                    <div class="cv-sidebar">
+                        <div class="cv-education">
+                            <h4 class="cv-section-title">Education</h4>
+                            <div class="cv-item">
+                                <div class="cv-item-header">
+                                    <h5>Bachelor's Degree in Information and Communication Engineering (Ongoing)</h5>
+                                    <span class="cv-company">University of Baghdad &ndash; Al-Khwarizmi College of
+                                        Engineering</span>
+                                    <span class="cv-date">13/11/2023 &ndash; Current</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cv-skills">
+                            <h4 class="cv-section-title">Core Skills</h4>
+                            <div class="cv-tags">
+                                <span class="cv-tag">Content Creation</span>
+                                <span class="cv-tag">Marketing Management</span>
+                                <span class="cv-tag">Copywriting</span>
+                                <span class="cv-tag">Graphic Design</span>
+                                <span class="cv-tag">Content Marketing Strategy</span>
+                                <span class="cv-tag">Event Marketing & Coverage</span>
+                                <span class="cv-tag">Brand Persona Development</span>
+                                <span class="cv-tag">Analytics & Performance Tracking</span>
+                                <span class="cv-tag">Creative Ideation</span>
+                                <span class="cv-tag">Planning & Organization</span>
+                                <span class="cv-tag">Communication Skills</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="contact section-padding">
+            <div class="contact-container">
+                <h2>Ready to scale?</h2>
+                <p>Let's turn your content into a revenue-generating asset.</p>
+                <div class="contact-methods">
+                    <a href="mailto:hello@example.com" class="btn btn-primary">Email Me</a>
+                    <a href="https://www.linkedin.com/in/ibrahim-ali-aa0291348?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                        target="_blank" class="btn btn-secondary">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Performance Social. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/charts.js"></script>
+</body>
+
+</html>
