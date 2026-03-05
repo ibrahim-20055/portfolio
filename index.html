@@ -919,29 +919,56 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // ========== AON FUNNEL ==========
-    const funnelCanvas = document.getElementById('aonFunnelChart');
-    if (funnelCanvas) {
-        new Chart(funnelCanvas.getContext('2d'), {
-            type: 'bar',
-            data: {
-                labels: ['Views', 'Profile Visits', 'Link Clicks', 'Registrations', 'Paid Students'],
-                datasets: [{
-                    data: [328000, 15000, 124, 78, 28],
-                    backgroundColor: ['#2a2a35','#3f3f4e','#6366f1','#8b5cf6','#fbbf24'],
-                    borderRadius: 5
-                }]
+const funnelCanvas = document.getElementById('aonFunnelChart');
+
+if (funnelCanvas) {
+    const ctxFunnel = funnelCanvas.getContext('2d');
+
+    new Chart(ctxFunnel, {
+        type: 'bar',
+        data: {
+            labels: ['Views', 'Profile Visits', 'Link Clicks', 'Registrations', 'Paid Students'],
+            datasets: [{
+                label: 'Funnel Progression',
+                data: [328000, 15000, 124, 78, 28],
+                backgroundColor: [
+                    '#2a2a35',
+                    '#3f3f4e',
+                    '#6366f1',
+                    '#8b5cf6',
+                    '#fbbf24'
+                ],
+                borderRadius: 4
+            }]
+        },
+        options: {
+            indexAxis: 'y',
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: { display: false }
             },
-            options: {
-                indexAxis: 'y',
-                responsive: true,
-                maintainAspectRatio: false,
-                scales: {
-                    x: { beginAtZero: true }
+            scales: {
+                x: {
+                    type: 'linear', // تم تغييره من logarithmic لتجنب مشاكل GitHub
+                    beginAtZero: true,
+                    ticks: {
+                        callback: function (value) {
+                            if (value >= 1000) {
+                                return value / 1000 + 'k';
+                            }
+                            return value;
+                        }
+                    }
                 },
-                plugins: { legend: { display: false } }
+                y: {
+                    grid: { display: false }
+                }
             }
-        });
-    }
+        }
+    });
+}
+}
 
     // ========== AON IMPACT ==========
     const impactCanvas = document.getElementById('aonImpactChart');
@@ -1037,6 +1064,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 </html>
+
 
 
 
