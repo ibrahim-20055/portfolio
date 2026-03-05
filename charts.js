@@ -94,7 +94,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 3. AON - Funnel Conversion Chart
     // Simulating a Funnel using a horizontal bar chart
-    const ctxFunnel = document.getElementById('aonFunnelChart').getContext('2d');
+const funnelCanvas = document.getElementById('aonFunnelChart');
+
+if (funnelCanvas) {
+    const ctxFunnel = funnelCanvas.getContext('2d');
+
     new Chart(ctxFunnel, {
         type: 'bar',
         data: {
@@ -103,29 +107,42 @@ document.addEventListener('DOMContentLoaded', () => {
                 label: 'Funnel Progression',
                 data: [328000, 15000, 124, 78, 28],
                 backgroundColor: [
-                    '#2a2a35', // Views
-                    '#3f3f4e', // Profile Visits
-                    '#6366f1', // Link Clicks
-                    '#8b5cf6', // Registrations
-                    '#fbbf24'  // Paid Students (Gold)
+                    '#2a2a35',
+                    '#3f3f4e',
+                    '#6366f1',
+                    '#8b5cf6',
+                    '#fbbf24'
                 ],
                 borderRadius: 4
             }]
         },
         options: {
-            indexAxis: 'y', // Makes it horizontal
+            indexAxis: 'y',
             responsive: true,
-            plugins: { legend: { display: false } },
+            maintainAspectRatio: false,
+            plugins: {
+                legend: { display: false }
+            },
             scales: {
                 x: {
-                    type: 'logarithmic', // Log scale because views are huge compared to sales
+                    type: 'linear', // تم تغييره من logarithmic لتجنب مشاكل GitHub
+                    beginAtZero: true,
                     ticks: {
-                        callback: function (value) { return value; }
+                        callback: function (value) {
+                            if (value >= 1000) {
+                                return value / 1000 + 'k';
+                            }
+                            return value;
+                        }
                     }
+                },
+                y: {
+                    grid: { display: false }
                 }
             }
         }
     });
+}
 
     // 4. AON - 8 Month Impact (Views & Link Clicks)
     const ctxAonImpact = document.getElementById('aonImpactChart').getContext('2d');
@@ -258,3 +275,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
