@@ -1182,4 +1182,138 @@ footer {
 .cv-tag:hover {
     background: rgba(99, 102, 241, 0.1);
     border-color: var(--accent-primary);
+
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+    .navbar {
+        padding: 0.8rem 1rem;
+    }
+
+    .nav-links {
+        display: none; /* hide menu for small screens (you can replace with hamburger later) */
+    }
+
+    /* HERO */
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+        padding-top: 7rem;
+        min-height: auto;
+    }
+
+    .hero .headline {
+        font-size: 2.2rem;
+    }
+
+    .hero .subheadline {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+
+    .hero-visual {
+        height: 260px;
+        padding: 1rem;
+    }
+
+    /* BUTTON GROUP */
+    .cta-group {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    /* SECTION HEADER */
+    .section-header {
+        text-align: center;
+    }
+
+    /* METRICS */
+    .metric-row,
+    .metric-row.col-3 {
+        grid-template-columns: 1fr;
+    }
+
+    /* DASHBOARD */
+    .chart-card {
+        padding: 1.2rem;
+    }
+
+    /* HUGE METRIC */
+    .huge-metric {
+        font-size: 2.2rem;
+    }
+
+    /* PERSONA GRID */
+    .persona-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* AUDIENCE CARD */
+    .audience-card {
+        flex-direction: column;
+    }
+
+    .ap-profile {
+        flex: auto;
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+        padding: 2rem 1.5rem;
+    }
+
+    .ap-details {
+        padding: 2rem 1.5rem;
+    }
+
+    /* CONTACT */
+    .contact-container {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .contact-methods {
+        flex-direction: column;
+    }
+
+    /* FUNNEL */
+    .funnel-diagram {
+        flex-wrap: wrap;
+        gap: 0.4rem;
+        justify-content: center;
+    }
+
+    .funnel-stage {
+        font-size: 0.7rem;
+        padding: 0.5rem 0.3rem;
+    }
+
+}
+
+/* SMALL PHONES */
+@media (max-width: 480px) {
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .hero .headline {
+        font-size: 1.9rem;
+    }
+
+    .section-padding {
+        padding: 4rem 1rem;
+    }
+
+    .impact-value {
+        font-size: 2.2rem;
+    }
+
 }
