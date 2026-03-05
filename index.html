@@ -891,6 +891,47 @@ Relatable yet authoritative</li>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
 
+     const ctxHero = document.getElementById('heroChart').getContext('2d');
+
+    // Gradient for Hero Chart
+    const gradientHero = ctxHero.createLinearGradient(0, 0, 0, 300);
+    gradientHero.addColorStop(0, 'rgba(99, 102, 241, 0.5)');
+    gradientHero.addColorStop(1, 'rgba(99, 102, 241, 0.0)');
+
+    new Chart(ctxHero, {
+        type: 'line',
+        data: {
+            labels: ['M1', 'M2', 'M3', 'M4', 'M5', 'M6'],
+            datasets: [{
+                label: 'Growth Index',
+                data: [10, 25, 30, 60, 85, 120],
+                borderColor: '#6366f1',
+                backgroundColor: gradientHero,
+                borderWidth: 3,
+                tension: 0.4,
+                fill: true,
+                pointBackgroundColor: '#18181c',
+                pointBorderColor: '#6366f1',
+                pointBorderWidth: 2,
+                pointRadius: 4,
+                pointHoverRadius: 6
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: { legend: { display: false } },
+            scales: {
+                x: { display: false },
+                y: { display: false }
+            },
+            interaction: {
+                intersect: false,
+                mode: 'index',
+            },
+        }
+    });
+
     // 2. NOVA ARABIA - Followers Growth Chart (50 Days)
     const ctxNova = document.getElementById('novaFollowersChart').getContext('2d');
     const gradientNova = ctxNova.createLinearGradient(0, 0, 0, 300);
@@ -1118,6 +1159,7 @@ if (funnelCanvas) {
 
 
 </html>
+
 
 
 
