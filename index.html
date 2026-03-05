@@ -890,36 +890,154 @@ Relatable yet authoritative</li>
     </footer>
 
     <!-- Scripts -->
-   <script src="./js/charts.js"></script>
-    <script>
-const ctx = document.getElementById('novaFollowersChart').getContext('2d');
-const novaChart = new Chart(ctx, {
-    type: 'line', // نوع الرسم
-    data: {
-        labels: ['Day 1', 'Day 10', 'Day 20', 'Day 30', 'Day 40', 'Day 50'],
-        datasets: [{
-            label: 'Followers',
-            data: [0, 2000, 4000, 7000, 9000, 10000],
-            borderColor: 'rgb(75, 192, 192)',
-            backgroundColor: 'rgba(75, 192, 192, 0.2)',
-            tension: 0.3
-        }]
-    },
-    options: {
-        responsive: true,
-        plugins: {
-            legend: { display: true },
-        },
-        scales: {
-            y: { beginAtZero: true }
-        }
+   <script src="charts.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    // ========== NOVA FOLLOWERS ==========
+    const novaCanvas = document.getElementById('novaFollowersChart');
+    if (novaCanvas) {
+        new Chart(novaCanvas.getContext('2d'), {
+            type: 'line',
+            data: {
+                labels: ['Day 1', 'Day 10', 'Day 20', 'Day 30', 'Day 40', 'Day 50'],
+                datasets: [{
+                    label: 'Followers',
+                    data: [0, 2000, 4000, 7000, 9000, 10000],
+                    borderColor: 'rgb(75,192,192)',
+                    backgroundColor: 'rgba(75,192,192,0.2)',
+                    tension: 0.3,
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: { y: { beginAtZero: true } }
+            }
+        });
     }
+
+    // ========== AON FUNNEL ==========
+    const funnelCanvas = document.getElementById('aonFunnelChart');
+    if (funnelCanvas) {
+        new Chart(funnelCanvas.getContext('2d'), {
+            type: 'bar',
+            data: {
+                labels: ['Views', 'Profile Visits', 'Link Clicks', 'Registrations', 'Paid Students'],
+                datasets: [{
+                    data: [328000, 15000, 124, 78, 28],
+                    backgroundColor: ['#2a2a35','#3f3f4e','#6366f1','#8b5cf6','#fbbf24'],
+                    borderRadius: 5
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: { beginAtZero: true }
+                },
+                plugins: { legend: { display: false } }
+            }
+        });
+    }
+
+    // ========== AON IMPACT ==========
+    const impactCanvas = document.getElementById('aonImpactChart');
+    if (impactCanvas) {
+        new Chart(impactCanvas.getContext('2d'), {
+            type: 'line',
+            data: {
+                labels: ['M1','M2','M3','M4','M5','M6','M7'],
+                datasets: [
+                    {
+                        label: 'Monthly Views',
+                        data: [191000,208500,254800,193200,201700,209900,61400],
+                        borderColor: '#6366f1',
+                        tension: 0.3,
+                        yAxisID: 'y'
+                    },
+                    {
+                        label: 'Link Clicks',
+                        data: [94,30,178,178,349,250,96],
+                        borderColor: '#10b981',
+                        tension: 0.3,
+                        yAxisID: 'y1'
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                interaction: { mode: 'index', intersect: false },
+                scales: {
+                    y: {
+                        type: 'linear',
+                        position: 'left',
+                        beginAtZero: true
+                    },
+                    y1: {
+                        type: 'linear',
+                        position: 'right',
+                        beginAtZero: true,
+                        grid: { drawOnChartArea: false }
+                    }
+                }
+            }
+        });
+    }
+
+    // ========== BATCH 2 SOURCE ==========
+    const sourceCanvas = document.getElementById('batch2SourceChart');
+    if (sourceCanvas) {
+        new Chart(sourceCanvas.getContext('2d'), {
+            type: 'doughnut',
+            data: {
+                labels: ['Influencer','IG Organic','Referrals','Prev Exposure','Misc'],
+                datasets: [{
+                    data: [17,11,5,2,7],
+                    backgroundColor: ['#6366f1','#06b6d4','#10b981','#fbbf24','#2a2a35'],
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false
+            }
+        });
+    }
+
+    // ========== AI SESSION IMPACT ==========
+    const sessionCanvas = document.getElementById('aiSessionChart');
+    if (sessionCanvas) {
+        new Chart(sessionCanvas.getContext('2d'), {
+            type: 'bar',
+            data: {
+                labels: ['Passive Content','Live Sessions'],
+                datasets: [{
+                    data: [10,85],
+                    backgroundColor: ['#3f3f4e','#10b981'],
+                    borderRadius: 5
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: { x: { beginAtZero: true } },
+                plugins: { legend: { display: false } }
+            }
+        });
+    }
+
 });
 </script>
 </body>
 
 
 </html>
+
 
 
 
